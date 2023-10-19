@@ -26,7 +26,7 @@ if nav_selection == "Model":
     st.subheader("Enter Transaction Details:")
     
     # Create input fields for user input
-    st.title("The 'step' feature is used to provide a temporal context or time-related information for a financial transaction, which can be important for fraud detection models to consider transaction timing patterns.")
+    st.text("The 'step' feature is used to provide a temporal context or time-related information for a financial transaction, which can be important for fraud detection models to consider transaction timing patterns.")
     step = st.number_input("Sequence Step of the Transaction", min_value=1.0)
     amount = st.number_input("Transaction Amount", min_value=0.0)
     old_balance_org = st.number_input("Old Balance of Origin Account", min_value=0.0)
