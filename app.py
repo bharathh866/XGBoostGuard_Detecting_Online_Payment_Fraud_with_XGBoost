@@ -25,8 +25,7 @@ if nav_selection == "Model":
     # User input section
     st.subheader("Enter Transaction Details:")
     
-    # Create input fields for user input
-    st.text("The 'step' feature is used to provide a temporal context or time-related information for a financial transaction, which can be important for fraud detection models to consider transaction timing patterns.")
+   
     step = st.number_input("Sequence Step of the Transaction", min_value=1.0)
     amount = st.number_input("Transaction Amount", min_value=0.0)
     old_balance_org = st.number_input("Old Balance of Origin Account", min_value=0.0)
@@ -61,9 +60,7 @@ elif nav_selection == "About":
     
     # Project Description
     st.subheader("Project Description")
-    project_description = """
-    My project is about creating a fraud detection model using the XGBoost machine learning algorithm. This model is designed to automatically identify potentially fraudulent financial transactions based on various transaction-related features.
-    """
+    
     st.write(project_description)
     
     # Steps Followed
